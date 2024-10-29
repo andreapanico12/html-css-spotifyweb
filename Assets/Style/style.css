@@ -3,3 +3,44 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root{
+  --home-color: #141922;
+  --sidemenu-color:#000000;
+  --playbar-color: #282828;
+  --title-color: #ffffff;
+  --subtitle-color: #7d7f84;
+}
+
+/* utilities */
+.debug{
+  border: 1px solid darkgray;
+  background-color: rgba(213, 226, 36, 0.445);
+}
+.d-flex{
+  display: flex;
+}
+
+/* /utilities */
+
+.home{
+  height: calc(100vh - 90px);
+}
+
+.board{
+  overflow: auto;
+  width: calc(100vw - 230px);
+}
+
+.board-top{
+  height: 90px;
+}
+
+.sidemenu{
+  width: 230px;
+  height: 100%;
+}
+
+.playbar{
+  height: 90px;
+}
