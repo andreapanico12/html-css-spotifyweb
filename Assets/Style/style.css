@@ -29,6 +29,10 @@ ul{
   flex-wrap: wrap;
 }
 
+.spbetween{
+  justify-content: space-between;
+}
+
 /* /utilities */
 
 .home{
@@ -56,8 +60,9 @@ li{
   margin: 0.9rem 0.3rem;
 }
 
+
 .card{
-  width: 180px;
+  width: calc( 100% / 7 );
   height: 280px;
   margin: 0.5rem;
 }
@@ -86,3 +91,23 @@ li{
 .playbar{
   height: 90px;
 }
+
+
+.col{
+  width: 230px;
+  height: 100%;
+
+}
+
+.centre{
+  width: 50%;
+
+}
+
+.buttons{
+  height: 50%;
+}
+
+
+
+
