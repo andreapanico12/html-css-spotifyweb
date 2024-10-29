@@ -12,6 +12,10 @@
   --subtitle-color: #7d7f84;
 }
 
+ul{
+  list-style: none;
+}
+
 /* utilities */
 .debug{
   border: 1px solid darkgray;
@@ -41,9 +45,9 @@
   justify-content: flex-end;
 }
 
-ul{
+.board-main ul{
   justify-content: center;
-  list-style: none;
+
 }
 
 li{
@@ -62,6 +66,22 @@ li{
   width: 230px;
   height: 100%;
 }
+
+.logo{
+ height: 90px;
+ width: 100%;
+}
+
+
+.playlist{
+  height: calc(100vh - 260px) ;
+  overflow: auto;
+}
+
+.user{
+  height: 80px;
+}
+
 
 .playbar{
   height: 90px;
