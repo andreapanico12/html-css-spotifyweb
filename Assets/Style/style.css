@@ -15,10 +15,14 @@
 /* utilities */
 .debug{
   border: 1px solid darkgray;
-  background-color: rgba(213, 226, 36, 0.445);
+  background-color: rgba(213, 226, 36, 0.325);
 }
 .d-flex{
   display: flex;
+}
+
+.fw-wrap{
+  flex-wrap: wrap;
 }
 
 /* /utilities */
@@ -34,6 +38,24 @@
 
 .board-top{
   height: 90px;
+  justify-content: flex-end;
+}
+
+ul{
+  justify-content: center;
+  list-style: none;
+}
+
+li{
+  width: 100px;
+  height: 20px;
+  margin: 0.9rem 0.3rem;
+}
+
+.card{
+  width: 180px;
+  height: 280px;
+  margin: 0.5rem;
 }
 
 .sidemenu{
