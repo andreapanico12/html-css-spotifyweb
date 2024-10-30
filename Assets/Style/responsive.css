@@ -9,3 +9,14 @@
     width: calc(100% / 3);
   }
 }
+
+@media (max-width: 600px){
+  .sidemenu{
+    width: 50px;
+
+  }
+
+  .board{
+    width: calc(100vw - 50px);
+  }
+}

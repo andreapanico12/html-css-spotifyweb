@@ -16,6 +16,10 @@
   --subtitle-color: #7d7f84;
 }
 
+body{
+  height: 100vh;
+}
+
 ul{
   list-style: none;
 }
@@ -102,6 +106,10 @@ h3{
   position: absolute;
 }
 
+.trans-ease05{
+  transition: .5s ease;
+}
+
 
 /* /utilities */
 
@@ -118,6 +126,10 @@ h3{
 .board-top{
   height: 90px;
   background-color: var(--header-color);
+  position: sticky;
+  opacity: 0.8;
+  z-index: 2;
+  top: 0;
 
 
 }
@@ -126,6 +138,7 @@ h3{
   border: 2px solid var(--title-color);
   padding: 0.6rem 2.0rem;
   border-radius: 2.0rem;
+  margin-right: 10px;
 }
 
 .button a{
@@ -135,8 +148,26 @@ text-transform: uppercase;
 font-weight: 600;
 }
 
+.button:hover{
+  padding: 0.7rem 2.1rem;
+  cursor: pointer;
+}
+.button:hover a{
+  font-size: 0.9rem;
+}
+
+.board-main li:hover{
+  cursor: pointer;
+  border-bottom: 2px solid greenyellow;
+}
+
+.board-main li:hover a{
+  color: var(--title-color);
+}
+
 li{
   margin: 0.9rem 0.5rem;
+  border: 2px solid transparent;
 }
 
 #cards{
@@ -144,14 +175,38 @@ li{
   padding-left: 1.5rem;
 }
 
-
-
 .card{
   width: calc( 100% / 7 );
   margin: 2rem 0;
   margin-right: 1.2rem;
   height: auto;
 }
+
+.overlay{
+  transition: .5s ease;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image:hover img{
+  opacity: 0.3;
+}
+
+.image:hover .overlay{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.overlay i{
+  color: white;
+  font-size: 40px;
+  padding: 16px 32px;
+}
+
 
 .subtitle{
   font-size: 0.8rem;
