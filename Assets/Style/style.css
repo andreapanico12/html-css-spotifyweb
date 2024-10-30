@@ -233,7 +233,7 @@ font-weight: 600;
   font-size: 0.8rem;
 }
 
-.sidemenu{
+.side{
   width: 230px;
   height: 100%;
   background-color: var(--sidemenu-color);
@@ -250,38 +250,94 @@ font-weight: 600;
 }
 
 
-.playlist{
+.sidemenu{
   height: calc(100vh - 260px) ;
 }
 
-.playlist li{
+.sidemenu .library li{
   border: 2px solid transparent;
+  margin-bottom: 2px;
 }
 
 
-.playlist .library-image{
+.sidemenu .library-image{
   width: 40px;
   height: 40px;
 
 }
 
-.playlist li:hover{
+.sidemenu .library li:hover{
   border-left: 2px solid greenyellow;
+  cursor: pointer;
 }
 
-.playlist li:hover path{
+.sidemenu .library li:hover path{
   fill: var(--title-color);
 }
 
-.playlist li:hover .library-text{
+.sidemenu .library li:hover .library-text{
   color: var(--title-color);
 }
 
-
-
-.user{
-  height: 80px;
+.playlist{
+  margin-top: 30px;
 }
+.playlist li{
+  padding: 0.5rem 0.5rem;
+}
+.playlist li i{
+font-size: 3rem;
+}
+
+.playlist li span{
+  padding-left: 5px;
+}
+
+.playlist li:hover{
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+
+
+
+.sidemenu-bottom{
+  height: 80px;
+  padding-left: 20px;
+  padding-top: 10px;
+  
+}
+
+.download-image{
+  width: 15px;
+  height: 15px;
+}
+
+.download span{
+  padding-left: 15px;
+}
+.line{
+  height: 0.05rem;
+  background-color: var(--subtitle-color);
+  width: 90%;
+  margin: 5px 0;
+}
+.user-image{
+  width: 30px;
+  height: 30px;
+  
+}
+
+.user-image img{
+  background-color: var(--subtitle-color);
+  border-radius: 100%;
+}
+
+.user span{
+  padding-left: 10px;
+}
+
+
 
 
 .playbar{
