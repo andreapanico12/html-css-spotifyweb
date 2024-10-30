@@ -11,9 +11,17 @@
 }
 
 @media (max-width: 600px){
-  .sidemenu{
+  .side{
     width: 50px;
 
+  }
+
+  .side span{
+    display: none;
+  }
+
+  .sidemenu .playlist{
+    display: none;
   }
 
   .board{
