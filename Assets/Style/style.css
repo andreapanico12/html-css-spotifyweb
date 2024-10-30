@@ -2,11 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+
 
 :root{
   --home-color: #141922;
   --sidemenu-color:#000000;
+  --header-color:#080b12;
   --playbar-color: #282828;
   --title-color: #ffffff;
   --subtitle-color: #7d7f84;
@@ -14,6 +18,19 @@
 
 ul{
   list-style: none;
+}
+
+img{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: var(--subtitle-color);
+}
+
+h3{
+  font-size: 0.95rem;
 }
 
 /* utilities */
@@ -29,58 +46,141 @@ ul{
   flex-wrap: wrap;
 }
 
-.spbetween{
+.jc-spb{
   justify-content: space-between;
 }
+.jc-c{
+  justify-content: center;
+}
+
+.jc-fe{
+  justify-content: flex-end;
+}
+
+.txt-c{
+  text-align: center;
+}
+
+.of-a{
+  overflow: auto;
+}
+
+.ai-c{
+  align-items: center;
+}
+
+.txt-tran{
+  text-transform: uppercase;
+}
+.grey{
+  color:var(--subtitle-color) ;
+}
+
+.white{
+  color: var(--title-color);
+}
+.w-7{
+  font-weight: 700;
+}
+
+.w-6{
+  font-weight: 600;
+}
+
+.pd05{
+  padding: 0.5rem;
+}
+
+.br-50{
+  border-radius: 50%;
+}
+
+.rel{
+  position: relative;
+}
+.abs{
+  position: absolute;
+}
+
 
 /* /utilities */
+
 
 .home{
   height: calc(100vh - 90px);
 }
 
 .board{
-  overflow: auto;
   width: calc(100vw - 230px);
+  background-color: var(--home-color);
 }
 
 .board-top{
   height: 90px;
-  justify-content: flex-end;
+  background-color: var(--header-color);
+
+
 }
 
-.board-main ul{
-  justify-content: center;
+.button{
+  border: 2px solid var(--title-color);
+  padding: 0.6rem 2.0rem;
+  border-radius: 2.0rem;
+}
 
+.button a{
+color: var(--title-color);
+font-size: 0.8rem;
+text-transform: uppercase;
+font-weight: 600;
 }
 
 li{
-  width: 100px;
-  height: 20px;
-  margin: 0.9rem 0.3rem;
+  margin: 0.9rem 0.5rem;
 }
+
+#cards{
+  padding: 3rem 0;
+  padding-left: 1.5rem;
+}
+
 
 
 .card{
   width: calc( 100% / 7 );
-  height: 280px;
-  margin: 0.5rem;
+  margin: 2rem 0;
+  margin-right: 1.2rem;
+  height: auto;
+}
+
+.subtitle{
+  font-size: 0.8rem;
 }
 
 .sidemenu{
   width: 230px;
   height: 100%;
+  background-color: var(--sidemenu-color);
 }
 
 .logo{
  height: 90px;
  width: 100%;
+ padding: 0.5rem 0;
+}
+.logo img{
+  width: 145px;
+  height: 50px;
 }
 
 
 .playlist{
   height: calc(100vh - 260px) ;
-  overflow: auto;
+}
+
+.playlist li{
+  width: 130px;
+  height: 20px;
 }
 
 .user{
@@ -104,7 +204,7 @@ li{
 
 }
 
-.buttons{
+.console{
   height: 50%;
 }
 

@@ -11,6 +11,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <!-- /font -->
 
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- /fontawesome -->
+
 <!-- style -->
  <link rel="stylesheet" href="./Assets/Style/style.css">
 <!-- /style -->
@@ -18,15 +22,18 @@
 <!-- responsive -->
   <link rel="stylesheet" href="./Assets/Style/responsive.css">
 <!--/responsive  -->
+
 </head>
 <body>
 <main>
   <div class="home d-flex debug">
 
     <section class="sidemenu debug">
-      <div class="logo debug"></div>
+      <div class="logo debug">
+        <img src="./Assets/img/logo.svg" alt="LOGO">
+      </div>
 
-      <div class="playlist"> 
+      <div class="playlist of-a"> 
         <nav>
           <ul>
             <li class="debug"></li>
@@ -64,55 +71,134 @@
       
     </section>
     
-    <section class="board">
-      <div class="board-top d-flex debug">
-        <button>effettua l'upgrade</button>
+    <section class="board of-a">
+      <div class="board-top d-flex jc-fe ai-c debug">
+        <div class="button"><a href="#">Effettua l'upgrade</a></div>
       </div>
       <div class="board-main">
         <nav>
-          <ul class="d-flex fw-wrap">
-            <li class="debug"></li>
-            <li class="debug"></li>
-            <li class="debug"></li>
-            <li class="debug"></li>
-            <li class="debug"></li>
-            <li class="debug"></li>
+          <ul class="d-flex fw-wrap jc-c">
+            <li>
+              <a class="txt-tran grey w-7" href="#">in evidenza</a>
+            </li>
+            <li>
+              <a class="txt-tran grey w-7" href="#">podcast</a>
+            </li>
+            <li>
+              <a class="txt-tran grey w-7" href="#">classifiche</a></li>
+            <li>
+              <a class="txt-tran grey w-7" href="#">generi e mood</a>
+            </li>
+            <li>
+              <a class="txt-tran grey w-7" href="#">nuove uscite</a>
+            </li>
+            <li>
+              <a class="txt-tran grey w-7" href="#">scopri</a>
+            </li>
           </ul>
         </nav>
+        <div id="cards">
+          <h2 class="white w-7">Recently Played</h2>
+          <div class="row d-flex fw-wrap">
+            <div class="card txt-c debug">
+              <div class="image">
+                <img src="./Assets/img/metal_lifting.jpg" alt="METAL">
+              </div>
+              <h3 class="white pd05">Heavy Metal</h3>
+              <span class="subtitle grey">subtitle
+              </span>
+            </div>
+            <div class="card txt-c debug">
+              <div class="image">
+                <img src="./Assets/img/stranger.jpeg" alt="STRANGER">
+              </div>
+              <h3 class="white pd05"> Stranger things, vol.1(a Netflix Original Series Soundtrack)</h3>
+              <span class="subtitle grey">Kyle Dixon & Michael Stein
+              </span>
+            </div>
+            <div class="card txt-c debug">
+              <div class="image">
+                <img src="./Assets/img/aquietplace.jpeg" alt="QUIETPLACE">
+              </div>
+              <h3 class="white pd05">A quiet place</h3>
+              <span class="subtitle grey">subtitle
+              </span>
+            </div>
+            <div class="card txt-c debug">
+              <div class="image">
+                <img src="./Assets/img/split.jpeg" alt="SPLIT">
+              </div>
+              <h3 class="white pd05">Split</h3>
+              <span class="subtitle grey">subtitle
+              </span>
+            </div>
+            <div class="card txt-c debug">
+              <div class="image">
+                <img src="./Assets/img/cure.jpeg" alt="CURE">
+              </div>
+              <h3 class="white pd05">A cure for Wellness</h3>
+              <span class="subtitle grey">subtitle
+              </span>
+            </div>
+            <div class="card txt-c debug">
+              <div class="image">
+                <img src="./Assets/img/sinister.jpeg" alt="SINISTER">
+              </div>
+              <h3 class="white pd05">Sinister</h3>
+              <span class="subtitle grey">subtitle
+              </span>
+            </div>
+            
+          </div>
+  
+          <h2 class="white w-7">Creato per John Doe</h2>
+          <span class="subtitle grey w-6">Più ascolti, più accurati saranno i suggerimenti.</span>
+          <div class="row d-flex fw-wrap">
+            <div class="card txt-c debug">
+              <div class="image">
+                <img src="./Assets/img/radar.jpeg" alt="RADAR">
+              </div>
+              <h3 class="white pd05">Release Radar</h3>
+            </div>
+            <div class="card txt-c debug">
+              <div class="image">
+                <img src="./Assets/img/mixdaily.jpeg" alt="MIXDAILY">
+              </div>
+              <h3 class="white pd05">Daily Mix 1</h3>
+            </div>
+          </div>
+          
+          
+          <h2 class="white w-7">Artisti più popolari</h2>
+          <span class="subtitle grey w-6">Più ascolti, più accurati saranno i suggerimenti.</span>
+          <div class="row d-flex fw-wrap">
+            <div class="card txt-c debug">
+              <div class="image">
+                <img class="br-50" src="./Assets/img/youg.jpeg" alt="YOUG">
+              </div>
+              <h3 class="white pd05">Lana del Rey</h3>
+            </div>
+            <div class="card txt-c debug">
+              <div class="image">
+                <img class="br-50" src="./Assets/img/einaudi.jpeg" alt="EINAUDI">
+              </div>
+              <h3 class="white pd05">Ludovico Einaudi</h3>
+            </div>
+
+
+          </div> 
         
-        <h2>TITOLO</h2>
-        <div class="row d-flex fw-wrap">
-          <div class="card debug"></div>
-          <div class="card debug"></div>
-          <div class="card debug"></div>
-          <div class="card debug"></div>
-          <div class="card debug"></div>
-          <div class="card debug"></div>
 
-
-        </div>
-
-        <h2>TITOLO</h2>
-        <div class="row d-flex fw-wrap">
-          <div class="card debug"></div>
-          <div class="card debug"></div>
-        </div>
-        
-        <h2>TITOLO</h2>
-        <div class="row d-flex fw-wrap">
-          <div class="card debug"></div>
-          <div class="card debug"></div>
-        </div> 
        
       </section>
   </div>
 
 </main>
 <footer>
-  <div class="playbar debug d-flex spbetween">
+  <div class="playbar debug d-flex jc-spb">
       <div class="col debug"></div>
       <div class="centre debug">
-        <div class="buttons debug"></div>
+        <div class="console debug"></div>
         <div class="bar debug"></div>
         
       </div>
