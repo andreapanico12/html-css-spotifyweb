@@ -131,6 +131,7 @@ h3{
 }
 
 
+
 /* /utilities */
 
 
@@ -254,8 +255,7 @@ font-weight: 600;
 }
 
 .playlist li{
-  width: 130px;
-  height: 20px;
+
 }
 
 .user{
@@ -277,9 +277,14 @@ font-weight: 600;
   height: 45px;
   margin: 0.5rem;
 }
-
-.icons{
-  padding-left: 20px;
+.song{
+  padding-right: 5px;
+}
+.icons i{
+    padding: 0 5px;
+}
+.icons i:hover{
+  cursor: pointer;
 }
 .console ul li i:hover{
   cursor: pointer;
@@ -289,22 +294,21 @@ font-weight: 600;
 
 }
 
-.audio-progress {
+.progress {
   margin-top: 5px;
   height: 0.2rem;
   width: 70%;
   background-color: var(--subtitle-color);
 }
-.audio-progress .bar {
+.progress .bar {
   height: 100%;
   width: 25%;
   background-color: white;
   display: block;
 }
 
-.audio-progress-handle{
+.progress-handle{
   display: none;
-  position:absolute;
   left: 125px;
   z-index: 1;
   margin-top: -4px;
@@ -315,15 +319,15 @@ font-weight: 600;
   background-color: var(--title-color);
 }
 
-.audio-progress:hover{
+.progress:hover{
   cursor: pointer;
 }
 
-.audio-progress:hover .audio-progress-handle{
+.progress:hover .progress-handle{
   display: block;
   cursor: pointer;
 }
-.audio-progress:hover .bar{
+.progress:hover .bar{
   background-color: greenyellow;
 }
 
@@ -347,6 +351,15 @@ font-weight: 600;
   height: 50%;
   padding-top: 10px;
   margin-bottom: 5px;
+}
+
+.progress.volume{
+  width: 50%;
+  margin-left: 5px;
+}
+
+.progress-handle.volume{
+  left: 20px;
 }
 
 
