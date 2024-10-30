@@ -255,8 +255,29 @@ font-weight: 600;
 }
 
 .playlist li{
+  border: 2px solid transparent;
+}
+
+
+.playlist .library-image{
+  width: 40px;
+  height: 40px;
 
 }
+
+.playlist li:hover{
+  border-left: 2px solid greenyellow;
+}
+
+.playlist li:hover path{
+  fill: var(--title-color);
+}
+
+.playlist li:hover .library-text{
+  color: var(--title-color);
+}
+
+
 
 .user{
   height: 80px;
