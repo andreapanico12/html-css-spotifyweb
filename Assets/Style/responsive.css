@@ -1,28 +1,68 @@
+
+/* 1100px */
 @media (max-width :1100px){
+
   .card{
     width: calc(100% / 5);
   }
 }
-
+/* 700px */
 @media (max-width: 700px){
+
   .card{
     width: calc(100% / 3);
   }
 }
-
+/* 600px */
 @media (max-width: 600px){
+
   .side{
     width: 50px;
 
+  }
+
+  .side .logo .logo-big{
+    display: none;
+  }
+
+  .side .logo .logo-small{
+    display: block;
+  }
+
+  .side .logo{
+    padding: 10px;
+  }
+
+  .library ul li{
+    padding: 5px 0;
+    padding-left: 10px;
+    
+  }
+
+  .playlist-bottom{
+    padding-left: 10px;
   }
 
   .side span{
     display: none;
   }
 
-  .sidemenu .playlist{
+  .sidemenu .playlist .playlist-top *{
     display: none;
   }
+
+  .sidemenu .playlist .playlist-list *{
+    display: none;
+  }
+
+  .sidemenu .playlist .playlist-bottom .download-image span{
+    display: none;
+  }
+
+  .sidemenu .playlist .playlist-bottom .user-image span{
+    display: none;
+  }
+
 
   .board{
     width: calc(100vw - 50px);

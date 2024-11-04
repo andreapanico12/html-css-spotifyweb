@@ -5,7 +5,7 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
+/* CUSTOM */
 
 :root{
   --home-color: #141922;
@@ -16,6 +16,9 @@
   --subtitle-color: #7d7f84;
 }
 
+/* /CUSTOM */
+
+/* GENERAL */
 body{
   height: 100vh;
 }
@@ -36,8 +39,9 @@ a{
 h3{
   font-size: 0.95rem;
 }
+/* /GENERAL */
 
-/* utilities */
+/* UTILITIES */
 .debug{
   border: 1px solid darkgray;
   background-color: rgba(213, 226, 36, 0.325);
@@ -118,6 +122,10 @@ h3{
   font-size: 0.8rem;
 }
 
+.ft-s085{
+  font-size: 0.85rem;
+}
+
 .ft-s1{
   font-size: 1rem;
 }
@@ -130,19 +138,184 @@ h3{
   font-size: 2rem;
 }
 
+.pdl15{
+  padding-left: 15px;
+}
 
 
-/* /utilities */
+/* /UTILITIES */
 
-
+/* MAIN */
 .home{
   height: calc(100vh - 90px);
 }
+
+/* MAIN SIDE */
+.side{
+  width: 230px;
+  height: 100%;
+  background-color: var(--sidemenu-color);
+}
+
+.logo{
+ height: 90px;
+ width: 100%;
+ padding-top: 15px;
+}
+.logo .logo-big{
+  width: 145px;
+  height: 50px;
+}
+
+.logo .logo-small{
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+
+.sidemenu{
+  height: calc(100% - 85px);
+}
+
+
+/* MAIN SIDE LIBRARY */
+.library{
+  height: 120px;
+}
+
+.sidemenu .library li{
+  border: 2px solid transparent;
+  margin-bottom: 2px;
+
+}
+
+
+.sidemenu .library-image{
+  width: 25px;
+  height: 25px;
+
+}
+
+.sidemenu .library li:hover{
+  border-left: 2px solid greenyellow;
+  cursor: pointer;
+}
+
+.sidemenu .library li:hover path{
+  fill: var(--title-color);
+}
+
+.sidemenu .library li:hover .library-text{
+  color: var(--title-color);
+}
+
+/* /LIBRARY */
+
+/* MAIN SIDE PLAYLIST */
+
+.sidemenu .playlist{ 
+  height: calc(100% - 120px);
+}
+
+.sidemenu .playlist .playlist-top{
+  height: 80px;
+}
+
+.sidemenu .playlist .playlist-top h3{
+  line-height: 30px;
+ }
+
+
+ /* PLAYLIST LIST */
+
+.sidemenu .playlist .playlist-list{
+  height: calc( 100% - 160px );
+}
+
+.playlist li{
+  padding: 0.5rem 0;
+}
+.playlist i{
+font-size: 2.5rem;
+}
+
+.playlist p span{
+  padding-left: 5px;
+}
+
+.playlist li:hover{
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+.playlist p:hover{
+  color: var(--title-color);
+  cursor: pointer;
+}
+/* /PLAYLIST LIST */
+
+/* PLAYLIST BOTTOM */
+.playlist-bottom{
+  height: 80px;
+  
+}
+
+.download-image{
+  width: 15px;
+  height: 15px;
+}
+
+.download span{
+  padding-left: 15px;
+}
+
+.download span a:hover{
+  color: var(--title-color);
+}
+
+.line{
+  height: 0.05rem;
+  background-color: var(--subtitle-color);
+  width: 90%;
+  margin: 5px 0;
+}
+.user-image{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  
+}
+
+.user-image img{
+  background-color: var(--subtitle-color);
+  border-radius: 50%;
+
+}
+
+
+
+.user span{
+  padding-left: 10px;
+}
+
+.user span a:hover{
+  color: var(--subtitle-color);
+}
+
+
+/* /PLAYLIST */
+
+/* /SIDE */
+
+
+/* MAIN BOARD */
 
 .board{
   width: calc(100vw - 230px);
   background-color: var(--home-color);
 }
+/* MAIN BOARD TOP */
 
 .board-top{
   height: 90px;
@@ -164,7 +337,6 @@ h3{
 
 .button a{
 color: var(--title-color);
-font-size: 0.8rem;
 text-transform: uppercase;
 font-weight: 600;
 }
@@ -177,6 +349,9 @@ font-weight: 600;
   scale: 1.2;
 }
 
+/* /TOP */
+
+/* BOARD CARDS */
 .board-main li:hover{
   cursor: pointer;
   border-bottom: 2px solid greenyellow;
@@ -203,15 +378,12 @@ font-weight: 600;
   height: auto;
 }
 
-
-
 .overlay{
   transition: .5s ease;
   opacity: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -238,112 +410,15 @@ font-weight: 600;
   font-size: 0.8rem;
 }
 
-.side{
-  width: 230px;
-  height: 100%;
-  background-color: var(--sidemenu-color);
-}
+/* /BOARD CARDS */
 
-.logo{
- height: 90px;
- width: 100%;
- padding: 0.5rem 0;
-}
-.logo img{
-  width: 145px;
-  height: 50px;
-}
-
-
-.sidemenu{
-  height: calc(100vh - 260px) ;
-}
-
-.sidemenu .library li{
-  border: 2px solid transparent;
-  margin-bottom: 2px;
-}
-
-
-.sidemenu .library-image{
-  width: 40px;
-  height: 40px;
-
-}
-
-.sidemenu .library li:hover{
-  border-left: 2px solid greenyellow;
-  cursor: pointer;
-}
-
-.sidemenu .library li:hover path{
-  fill: var(--title-color);
-}
-
-.sidemenu .library li:hover .library-text{
-  color: var(--title-color);
-}
-
-.playlist{
-  margin-top: 30px;
-}
-.playlist li{
-  padding: 0.5rem 0.5rem;
-}
-.playlist li i{
-font-size: 3rem;
-}
-
-.playlist li span{
-  padding-left: 5px;
-}
-
-.playlist li:hover{
-  color: var(--title-color);
-  cursor: pointer;
-}
+/* /MAIN */
 
 
 
 
-.sidemenu-bottom{
-  height: 80px;
-  padding-left: 20px;
-  padding-top: 10px;
-  
-}
 
-.download-image{
-  width: 15px;
-  height: 15px;
-}
-
-.download span{
-  padding-left: 15px;
-}
-.line{
-  height: 0.05rem;
-  background-color: var(--subtitle-color);
-  width: 90%;
-  margin: 5px 0;
-}
-.user-image{
-  width: 30px;
-  height: 30px;
-  
-}
-
-.user-image img{
-  background-color: var(--subtitle-color);
-  border-radius: 100%;
-}
-
-.user span{
-  padding-left: 10px;
-}
-
-
-
+/* FOOTER PLAYBAR */
 
 .playbar{
   height: 90px;
@@ -351,8 +426,10 @@ font-size: 3rem;
 }
 
 .playbar li{
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 3%;
 }
+
+/* PLAYBAR LEFT */
 
 .image-small{
   width: 45px;
@@ -363,25 +440,36 @@ font-size: 3rem;
   padding-right: 5px;
 }
 .icons i{
-    padding: 0 5px;
+    padding: 0 3px;
 }
 .icons i:hover{
   cursor: pointer;
+  color: var(--subtitle-color);
 }
+.p-right .icons i:hover{
+  color: var(--title-color);
+}
+
+/* PLAYBAR CENTER */
+
 .console ul li i:hover{
   cursor: pointer;
+  color: var(--subtitle-color);
 }
+
 .console ul li:nth-child(3) i:hover{
   scale: 1.2;
+  color: var(--title-color);
 
 }
-
+/* TIME BAR */
 .progress {
   margin-top: 5px;
   height: 0.2rem;
   width: 70%;
   background-color: var(--subtitle-color);
 }
+
 .progress .bar {
   height: 100%;
   width: 25%;
@@ -391,7 +479,7 @@ font-size: 3rem;
 
 .progress-handle{
   display: none;
-  left: 125px;
+  left: 25%;
   z-index: 1;
   margin-top: -4px;
   width: 10px;
@@ -417,7 +505,7 @@ font-size: 3rem;
   padding: 10px;
 
 }
-
+/* /TIME BAR */
 .col{
   width: 230px;
   height: 100%;
@@ -428,6 +516,9 @@ font-size: 3rem;
   width: 50%;
 
 }
+/* /PLAYBAR CENTER */
+
+/* PLAYBAR RIGHT */
 
 .console{
   height: 50%;
@@ -441,9 +532,11 @@ font-size: 3rem;
 }
 
 .progress-handle.volume{
-  left: 20px;
+  left: 20%;
 }
+/* /PLAYBAR */
 
+/* /FOOTER */
 
 
 

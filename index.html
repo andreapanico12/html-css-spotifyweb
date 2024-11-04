@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Esercizio: Spotify Web</title>
+  <ink rel="icon" type="image/x-icon" href="./Assets/img/favicon.ico"></ink>
 
 <!-- font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,30 +27,31 @@
 </head>
 <body>
 <main>
-  <div class="home d-flex debug">
+  <div class="home d-flex">
 
-    <section class="side debug">
-      <div class="logo">
-        <img src="./Assets/img/logo.svg" alt="LOGO">
+    <section class="side">
+      <div class="logo pdl15">
+        <img class="logo-small" src="./Assets/img/logo-small.svg" alt="LOGO SMALL">
+        <img class="logo-big" src="./Assets/img/logo.svg" alt="LOGO">
       </div>
 
-      <div class="sidemenu of-a"> 
+      <div class="sidemenu"> 
         <nav class="library">
           <ul>
-            <li class="d-flex ai-c">
+            <li class="d-flex ai-c pdl15">
               <div class="library-image">
                 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#7d7f84"/></svg>
 
               </div>
               <span class="library-text grey w-6">Home</span>
             </li>
-            <li class="d-flex ai-c">
+            <li class="d-flex ai-c pdl15">
               <div class="library-image">
                 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#7d7f84" fill-rule="evenodd"/></svg>
               </div>
               <span class="library-text grey w-6">Cerca</span>
             </li>
-            <li class="d-flex ai-c">
+            <li class="d-flex ai-c pdl15">
               <div class="library-image">
                 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#7d7f84"/></svg>
 
@@ -61,52 +63,64 @@
           </ul>
         </nav>
 
-        <div class="playlist of-a">
-          <h3 class="white w-7">PLAYLIST</h3>
-          <nav>
-            <ul>
-              <li class=" d-flex ai-c grey w-6">
+        <div class="playlist">
+          <div class="playlist-top pdl15">
+
+            <h3 class="white w-7">PLAYLIST</h3>
+          
+            
+            <p class=" d-flex ai-c grey w-6">
                 <i class="fa-solid fa-square-plus"></i>
                 <span>Crea la tua playlist</span>
-            
-              </li>
-              <li class="grey w-6">Nome Playlist</li>
-              <li class="grey w-6">Nome Playlist</li>
-              <li class="grey w-6">Nome Playlist</li>
-              <li class="grey w-6">Nome Playlist</li>
-              <li class="grey w-6">Nome Playlist</li>
-              <li class="grey w-6">Nome Playlist</li>
-              <li class="grey w-6">Nome Playlist</li>
+              </p>
+
+          </div>
+
+          <div class="playlist-list of-a pdl15">
+
+            <nav>    
+              <ul>
+                <li class="grey w-6">Nome Playlist</li>
+                <li class="grey w-6">Nome Playlist</li>
+                <li class="grey w-6">Nome Playlist</li>
+                <li class="grey w-6">Nome Playlist</li>
+                <li class="grey w-6">Nome Playlist</li>
+                <li class="grey w-6">Nome Playlist</li>
+                <li class="grey w-6">Nome Playlist</li>
+              </ul>
+            </nav>
+
+          </div> 
+          
+          <div class="playlist-bottom pdl15">
+            <div class="download d-flex ai-c">
+                <div class="download-image">
+                  <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Download icon</title><path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z" fill="#7d7f84" fill-rule="evenodd"/></svg>
     
-            </ul>
-          </nav>
+                </div>
+                <span><a class="grey ft-s08 w-6" href="#">Installa app</a></span>
+            </div>
+            <div class="line"></div>
+            <div class="user d-flex ai-c">
+              <div class="user-image">
+                <img src="./Assets/img/profile.svg" alt="PROFILE">
+                
+              </div>
+              <span><a class="white w-7 ft-s08" href="#">John Doe</a></span>
+            </div>
+            
+    
+          </div>
+
         </div>
           
-        </div>
-
-      
-
-      
-
-      <div class="sidemenu-bottom">
-        <div class="download d-flex ai-c">
-            <div class="download-image">
-              <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Download icon</title><path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z" fill="#7d7f84" fill-rule="evenodd"/></svg>
-
-            </div>
-            <span class="grey ft-s08 w-6">Installa app</span>
-        </div>
-        <div class="line"></div>
-        <div class="user d-flex ai-c">
-          <div class="user-image">
-            <img src="./Assets/img/profile.svg" alt="PROFILE">
-            
-          </div>
-          <span class="white w-7 ft-s08">John Doe</span>
-        </div>
-        
-
       </div>
+
+      
+
+      
+
+
 
 
 
@@ -115,27 +129,27 @@
     
     <section class="board of-a">
       <div class="board-top d-flex jc-fe ai-c debug">
-        <div class="button"><a href="#">Effettua l'upgrade</a></div>
+        <div class="button"><a class="ft-s08" href="#">Effettua l'upgrade</a></div>
       </div>
       <div class="board-main">
         <nav>
           <ul class="d-flex fw-wrap jc-c">
             <li>
-              <a class="txt-tran grey w-7" href="#">in evidenza</a>
+              <a class="txt-tran grey w-7 ft-s085" href="#">in evidenza</a>
             </li>
             <li>
-              <a class="txt-tran grey w-7" href="#">podcast</a>
+              <a class="txt-tran grey w-7 ft-s085" href="#">podcast</a>
             </li>
             <li>
-              <a class="txt-tran grey w-7" href="#">classifiche</a></li>
+              <a class="txt-tran grey w-7 ft-s085" href="#">classifiche</a></li>
             <li>
-              <a class="txt-tran grey w-7" href="#">generi e mood</a>
+              <a class="txt-tran grey w-7 ft-s085" href="#">generi e mood</a>
             </li>
             <li>
-              <a class="txt-tran grey w-7" href="#">nuove uscite</a>
+              <a class="txt-tran grey w-7 ft-s085" href="#">nuove uscite</a>
             </li>
             <li>
-              <a class="txt-tran grey w-7" href="#">scopri</a>
+              <a class="txt-tran grey w-7 ft-s085" href="#">scopri</a>
             </li>
           </ul>
         </nav>
@@ -269,13 +283,13 @@
 </main>
 <footer>
   <div class="playbar debug d-flex jc-spb">
-      <div class="col d-flex ai-c">
+      <div class="p-right col d-flex ai-c">
         <div class="image-small"><img src="./Assets/img/player_left.jpg" alt=""></div>
         <div class="song">
           <h5 class="white">Hilltop Hoods</h5>
           <p class="ft-s06 w-6 grey">C.Griswold & A. Eagle</p>
         </div>
-        <div class="icons grey w-6">
+        <div class="icons grey">
           <i class="fa-regular fa-heart"></i>
           <i class="fa-regular fa-folder"></i>
         </div>
@@ -283,17 +297,17 @@
       <div class="centre">
         <div class="console">
          <ul class="d-flex jc-c ai-c">
-          <li class="white w-7 ft-s12"><i class="fa-solid fa-shuffle"></i>
+          <li class="white ft-s12"><i class="fa-solid fa-shuffle"></i>
           </li>
-          <li class="white w-7 ft-s12"><i class="fa-solid fa-backward-step"></i>
+          <li class="white ft-s12"><i class="fa-solid fa-backward-step"></i>
           </li>
-          <li class="white w-7 ft-s20">
+          <li class="white ft-s20">
             <i class="fa-regular fa-circle-play"></i>
           </li>
-          <li class="white w-7 ft-s12">
+          <li class="white ft-s12">
             <i class="fa-solid fa-forward-step"></i>
           </li>
-          <li class="white w-7 ft-s12">
+          <li class="white ft-s12">
             <i class="fa-solid fa-rotate-right"></i>
           </li>
         </ul> 
@@ -313,7 +327,7 @@
         </div>
         
       </div>
-      <div class="col d-flex ai-c">
+      <div class="p-left col d-flex ai-c">
         <div class="icons white w-6">
           <i class="fa-solid fa-list"></i>
           <i class="fa-solid fa-desktop"></i>
