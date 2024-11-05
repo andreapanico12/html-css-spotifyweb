@@ -111,7 +111,7 @@ h3{
 }
 
 .trans-ease05{
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .ft-s06{
@@ -379,7 +379,7 @@ font-weight: 600;
 }
 
 .overlay{
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   top: 50%;
   left: 50%;
@@ -413,10 +413,6 @@ font-weight: 600;
 /* /BOARD CARDS */
 
 /* /MAIN */
-
-
-
-
 
 /* FOOTER PLAYBAR */
 
